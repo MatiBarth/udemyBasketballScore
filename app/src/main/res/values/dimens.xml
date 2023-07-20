@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_constrain">16dp</dimen>
+    <dimen name="padding_linear_layout">16dp</dimen>
+    <dimen name="size_board">28sp</dimen>
+    <dimen name="height_constraint_layout">0dp</dimen>
+    <dimen name="text_size_button_points">24sp</dimen>
+    <dimen name="text_size_board">50sp</dimen>
+    <dimen name="padding_image_button">20dp</dimen>
+    <dimen name="size_width_navigate_activity">50dp</dimen>
+    <dimen name="size_height_navigate_activity">60dp</dimen>
+    <dimen name="margin_navigate_activity_button">4dp</dimen>
+    <dimen name="text_size_navigate_activity_button">26sp</dimen>
+    <dimen name="size_board_tittle">36sp</dimen>
+    <dimen name="size_text_score_result">76sp</dimen>
+    <dimen name="size_text_final_result">26sp</dimen>
+</resources>

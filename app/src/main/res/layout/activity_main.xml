@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/padding_linear_layout">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Local"
+        android:text="@string/board_local"
         android:textAlignment="center"
-        android:textSize="28sp"
+        android:textSize="@dimen/size_board"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,18 +22,18 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/height_constraint_layout"
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/button_to_subtract_point"
+            android:id="@+id/local_button_to_subtract_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/button_color"
             android:gravity="center"
-            android:text="-1"
+            android:text="@string/text_button_subtract"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/text_size_button_points"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -44,42 +44,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="50sp"
+            android:textSize="@dimen/text_size_board"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="14" />
+            android:text="@string/default_score_board" />
 
         <Button
-            android:id="@+id/button_to_add_one_point"
+            android:id="@+id/local_button_to_add_one_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/button_color"
             android:gravity="center"
-            android:text="+1"
+            android:text="@string/text_button_one_point"
             android:textColor="@color/black"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/button_to_add_two_points"
+            android:textSize="@dimen/text_size_button_points"
+            app:layout_constraintBottom_toTopOf="@+id/local_button_to_add_two_points"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button_to_add_two_points"
+            android:id="@+id/local_button_to_add_two_points"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/button_color"
             android:gravity="center"
-            android:text="+2"
+            android:text="@string/text_button_two_points"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/text_size_button_points"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/height_constraint_layout"
         android:layout_weight="1">
 
         <ImageButton
@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/button_color"
-            android:padding="20dp"
+            android:padding="@dimen/padding_image_button"
             android:src="@drawable/restart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -105,13 +105,13 @@
 
         <Button
             android:id="@+id/button_to_score_activity"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="4dp"
+            android:layout_width="@dimen/size_width_navigate_activity"
+            android:layout_height="@dimen/size_height_navigate_activity"
+            android:layout_marginEnd="@dimen/margin_navigate_activity_button"
             android:backgroundTint="@color/button_color"
             android:gravity="center"
             android:text=">"
-            android:textSize="26sp"
+            android:textSize="@dimen/text_size_navigate_activity_button"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +120,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/height_constraint_layout"
         android:layout_weight="1">
 
         <Button
@@ -129,9 +129,9 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/button_color"
             android:gravity="center"
-            android:text="-1"
+            android:text="@string/text_button_subtract"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/text_size_button_points"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -142,12 +142,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="50sp"
+            android:textSize="@dimen/text_size_board"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="14" />
+            android:text="@string/default_score_board" />
 
         <Button
             android:id="@+id/visitor_button_to_add_one_point"
@@ -155,9 +155,9 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/button_color"
             android:gravity="center"
-            android:text="+1"
+            android:text="@string/text_button_one_point"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/text_size_button_points"
             app:layout_constraintBottom_toTopOf="@+id/visitor_button_to_add_two_points"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -168,18 +168,18 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/button_color"
             android:gravity="center"
-            android:text="+2"
+            android:text="@string/text_button_two_points"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/text_size_button_points"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Visitor"
+        android:text="@string/board_visitor"
         android:textAlignment="center"
-        android:textSize="28sp"
+        android:textSize="@dimen/size_board"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

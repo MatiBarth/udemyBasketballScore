@@ -2,4 +2,11 @@
     <string name="app_name">Basketball Score</string>
     <string name="string_victoria">El ganador fue el equipo %s \uD83D\uDE42</string>
     <string name="string_empate">Fue un empate \uD83D\uDE41</string>
+    <string name="board_local">Local</string>
+    <string name="text_button_subtract">-1</string>
+    <string name="default_score_board">0</string>
+    <string name="text_button_one_point">+1</string>
+    <string name="text_button_two_points">+2</string>
+    <string name="board_visitor">Visitor</string>
+    <string name="board_local_visitor">Local - Visitante</string>
 </resources>
